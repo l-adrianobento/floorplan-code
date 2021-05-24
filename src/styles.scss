@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/shared/scss/colors';
+@import 'bootstrap/dist/css/bootstrap-grid.min.css';
+
+html, body { height: 100%; }
+
+body { margin: 0; 
+    font-family: 'Inconsolata', monospace !important;
+    font-style: normal;
+    background: $grey-primary;
+}
+
+button, .mat-list-item, .mat-expansion-panel-header, .mat-expansion-panel-content {
+    font-family: 'Inconsolata', monospace !important;   
+}
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.custom-dialog-container .mat-dialog-container {
+    padding: 0 !important;
+    border-radius: 0px;
+    background: $grey-primary;
+}
+
+.total-info {
+    font-size: 0.8em;
+}

@@ -1,0 +1,40 @@
+<div class="especificacoes_tela">
+    <div class="title">Detalhes</div>
+    <button class="close" mat-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+    <div class="produto">
+        <div class="row">
+            <div class="col-5 image" [ngClass]="{'center-image': revestimentos[data.item].centerImage}">
+                <img 
+                src="../../../../assets/imgs/revestimentos/{{revestimentos[data.item].img.name}}" 
+            style="height: {{revestimentos[data.item].img.height}}; width: {{revestimentos[data.item].img.width}};"
+
+                alt="{{revestimentos[data.item].img.alt}}">
+            </div>
+            <div class="col info">
+                <div class="name">{{revestimentos[data.item].name}}</div>
+                <div class="value">
+                    <div class="description">Preço por m²</div>
+                    <div class="price">{{revestimentos[data.item].price}}</div>
+                    <button mat-button class="acesso_site" (click)="accessItem(revestimentos[data.item].link)">
+                        Acesse o site<mat-icon>arrow_forward_ios</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <div class="especificacoes">
+        <mat-list>
+            <ng-container *ngFor="let attribute of revestimentos[data.item].especifications">
+                <mat-list-item [ngClass]="{'change-hight': attribute.longText}">
+                    <p class="especificacoes_name" [ngClass]="{'long-text': attribute.longText}" [innerHTML]="attribute.name"></p>
+                    <p class="especificacoes_value" [ngClass]="{'bold-text': attribute.boldText}">{{attribute.value}}</p>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+            </ng-container>
+        </mat-list>
+    </div>
+     
+</div>

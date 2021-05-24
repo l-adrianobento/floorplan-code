@@ -1,0 +1,85 @@
+.comparador {
+    margin-top: 3vh;
+    .title {
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 1.1em;   
+    }
+
+    .subtitle {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 0.8em;
+        margin-top: 2px;   
+        margin-bottom: 2vh; 
+        color: #666;  
+    }
+
+    .mat-expansion-panel {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0px;
+
+        &-header:hover {
+            background: transparent;
+        }
+    }
+
+    .mat-list-base {
+        padding-top: 0px;
+    }
+
+    .mat-list-base .mat-list-item {
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .mat-expansion-panel-header-title {
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+
+
+
+    .mat-expansion-panel-content {
+        line-height: normal;
+    }
+
+    .image {
+        box-shadow: 3px 3px 5px #aaa;
+    }
+
+    .name {
+        font-size: 0.7em;
+        margin: 0 80px 0 100px;
+        font-weight: bold;
+        position: absolute;
+        top: 6px;
+        line-height: normal;
+    }
+
+    .description {
+        position: absolute;
+        left: 118px;
+        bottom: 21px;
+        font-size: 0.7em;
+        color: #666;
+    }
+
+    .price {
+        font-size: 1.2em;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 4px;
+        left: 118px;
+    }
+
+    .icon {
+        position: absolute;
+        right: 5%;
+    }
+}
+

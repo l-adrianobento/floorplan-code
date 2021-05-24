@@ -1,0 +1,16 @@
+@import '../../shared/scss/colors';
+
+footer {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 13px 0;
+    height: 45px;
+    font-size: 0.6em;
+    background-color: $yellow-primary;
+
+    p {
+        margin: 0;
+    }
+}

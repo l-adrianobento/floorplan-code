@@ -1,0 +1,29 @@
+header {
+
+    div {
+        padding: 0;
+
+        &.row {
+            margin: 0 !important;
+        }
+    }
+    img {
+        height: 17vh; 
+        width: 17vh;
+    }
+
+    .phrase {
+        text-align: right;
+        align-self: center;
+        right: 5vw;
+        p {
+            margin: 0;
+            font-size: 0.7em;
+            width: 100%;
+        }
+        .bold {
+            font-weight: bold; 
+        }
+    }
+    
+}

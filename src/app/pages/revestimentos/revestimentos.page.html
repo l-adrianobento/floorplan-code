@@ -1,0 +1,23 @@
+<div class="revestimentos">
+    <div class="title">Lista de revestimentos</div>
+    <div class="subtitle">Clique em um revestimento para ir ao site oficial</div>
+    <mat-list>
+        <mat-list-item matRipple (click)="openDialog('tijolo')">
+            <img class="image" src="../../../../assets/imgs/revestimentos/antik-cafe-marrom.png" height="80px" width="90px" alt="Antik Cafe Marrom">
+            <div class="name">Revestimento Brilhante Borda Bold Antik Cafe Marrom 32x45cm</div>
+            <div class="description">Preço por m²</div>
+            <div class="price">R$ 15,99</div>
+            <mat-icon class="icon">arrow_forward_ios</mat-icon>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item matRipple (click)="openDialog('madeira')">
+            <img style="left: 13%" class="image" src="../../../../assets/imgs/revestimentos/canela-ripado.png" height="84px" width="30px" alt="Canela ripado">
+            <div class="name">Revestimento Esmaltado Borda Reta Decor Canela Ripado 30x90cm</div>
+            <div class="description">Preço por m²</div>
+            <div class="price">R$ 32,99</div>
+            <mat-icon class="icon">arrow_forward_ios</mat-icon>
+        </mat-list-item>
+    </mat-list>
+
+    <app-voltar></app-voltar>
+</div>

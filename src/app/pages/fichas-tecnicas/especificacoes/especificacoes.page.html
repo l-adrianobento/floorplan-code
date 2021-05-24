@@ -1,0 +1,40 @@
+<div class="especificacoes_tela">
+    <div class="title">Especificações</div>
+    <button class="close" mat-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+    <div class="produto">
+        <div class="row">
+            <div class="col-4 image">
+                <img 
+                src="../../../../assets/imgs/eletrodomesticos/{{products[data.item].img.name}}" 
+            style="height: {{products[data.item].img.height}}; width: {{products[data.item].img.width}};"
+
+                alt="{{products[data.item].img.alt}}">
+            </div>
+            <div class="col info">
+                <div class="name">{{products[data.item].name}}</div>
+                <div class="value">
+                    <div class="description">Preço</div>
+                    <div class="price">{{products[data.item].price}}</div>
+                    <button mat-button class="acesso_site" (click)="accessItem(products[data.item].link)">
+                        Acesse o site<mat-icon>arrow_forward_ios</mat-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <div class="especificacoes">
+        <mat-list>
+            <ng-container *ngFor="let attribute of products[data.item].especifications">
+                <mat-list-item>
+                    <p class="especificacoes_name">{{attribute.name}}</p>
+                    <p class="especificacoes_value">{{attribute.value}}</p>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+            </ng-container>
+        </mat-list>
+    </div>
+     
+</div>

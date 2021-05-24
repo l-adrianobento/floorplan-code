@@ -1,0 +1,23 @@
+.rating {
+    text-align: center;
+
+    .title {
+        font-size: 1.1em;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+    }
+
+    .estrelas {
+        margin-top: 16px;
+
+        .icon {
+            height: 36px;
+            width: 36px;
+            font-size: 36px;
+            margin-left: 4px;
+            margin-right: 4px;
+            color: #f1d77b;
+        }
+    }
+}

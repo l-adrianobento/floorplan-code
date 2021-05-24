@@ -1,0 +1,26 @@
+.home {
+    margin-top: 3vh;
+    .title {
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 1.1em;
+        margin-bottom: 3vh;    
+    }
+
+    mat-list {
+        margin: 0 3vw;
+
+        mat-list-item {
+            font-family: 'Inconsolata', monospace !important;
+            font-size: 1.2em;
+
+            mat-icon {
+                font-size: 1.3em;
+            }
+        }
+    }
+
+
+}

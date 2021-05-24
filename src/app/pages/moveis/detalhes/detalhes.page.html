@@ -1,0 +1,24 @@
+<div class="detalhes">
+        <div class="title">Detalhes</div>
+        <div class="subtitle">{{products[data.item].name}}</div>
+        <div class="close_container">
+            <button class="close" mat-button mat-dialog-close>
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    <div class="slider_image">
+        <div id="circlr">
+            <img *ngFor="let imgs of products[data.item].imgs" data-src="../../../assets/imgs/moveis/{{imgs}}" src="../../../assets/imgs/moveis/{{imgs}}">
+        </div>
+        <div class="controlls">
+            <button mat-button (click)="change(0)">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+            <mat-icon class="touch">touch_app</mat-icon>
+            <button mat-button (click)="change(1)">
+                <mat-icon>arrow_forward</mat-icon>
+            </button>
+        </div>
+    </div>
+     
+</div>

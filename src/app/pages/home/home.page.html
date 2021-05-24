@@ -1,0 +1,29 @@
+<div class="home">
+    <div class="title">Selecione uma das opções para ver mais detalhes</div>
+    <mat-list>
+        <mat-list-item matRipple (click)="accessArea('/revestimentos')" >
+            <mat-icon mat-list-icon>layers</mat-icon>
+            <div mat-line>Revestimentos</div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item matRipple (click)="accessArea('/moveis')">
+            <mat-icon mat-list-icon>weekend</mat-icon>
+            <div mat-line>Móveis</div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item matRipple (click)="accessArea('/fichas-tecnicas')">
+            <mat-icon mat-list-icon>build</mat-icon>
+            <div mat-line>Fichas técnicas</div>
+        </mat-list-item> 
+        <mat-divider></mat-divider>   
+        <mat-list-item matRipple (click)="accessArea('/visita')">
+            <mat-icon mat-list-icon>home</mat-icon>
+            <div mat-line>Visita 3D</div>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item matRipple (click)="accessArea('/comparador-de-precos')">
+            <mat-icon mat-list-icon>shopping_cart</mat-icon>
+            <div mat-line>Comparador de preços</div>
+        </mat-list-item>
+    </mat-list>
+</div>

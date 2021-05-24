@@ -1,0 +1,26 @@
+.visita {
+    margin-top: 0vh;
+
+    .title {
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 1.1em;   
+    }
+
+    .subtitle {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 0.8em;
+        margin-top: 2px;   
+        margin-bottom: 2vh; 
+        color: #666;  
+    }
+    #viewer {
+        margin: auto;
+        width: 95vw;
+        height: 55vh;
+    }
+}

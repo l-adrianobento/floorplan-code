@@ -1,0 +1,60 @@
+.revestimentos {
+    margin-top: 2vh;
+    .title {
+        font-weight: bold;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 1.1em;   
+    }
+
+    .subtitle {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        font-size: 0.8em;
+        margin-top: 2px;
+        color: #666;  
+    }
+
+    .mat-list-base .mat-list-item {
+        height: 100px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+    }
+
+    .image {
+        box-shadow: 3px 3px 5px #aaa;
+        position: absolute;
+        top: 10px;
+    }
+
+    .name {
+        font-size: 0.7em;
+        margin: 0 80px 0 105px;
+        font-weight: bold;
+        position: absolute;
+        top: 10px;
+    }
+
+    .description {
+        position: absolute;
+        left: 122px;
+        bottom: 28px;
+        font-size: 0.7em;
+        color: #666;
+    }
+
+    .price {
+        font-size: 1.2em;
+        font-weight: bolder;
+        position: absolute;
+        bottom: 6px;
+        left: 122px;
+    }
+
+    .icon {
+        position: absolute;
+        right: 5%;
+    }
+}
